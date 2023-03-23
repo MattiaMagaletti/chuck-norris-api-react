@@ -1,12 +1,16 @@
 import { useState } from 'react'
+import '../styles/Title.css'
 
 function Title() {
 
-  return (
+ const [count, setCount] = useState(0)
+
+
+ return (
     <div className="Title">
-        <h1>ciao</h1>
+      
     </div>
-  )
+ )
 }
 
 export default Title
