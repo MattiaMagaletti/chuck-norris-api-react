@@ -9,27 +9,21 @@ function App() {
 
     const [joke, setJoke] = useState("")
 
-    let loadJOkeCallback = function(){
+    let loadTextCallback = function(){
+        console.log()
+    }
+
+    let copyTextCallback = function(){
         console.log()
     }
 
 
     return (
         <div className="App">
-            <h1>Chuck Norris API JOke Generator</h1>
-            <p>Chuck</p>
-            <div class="card">
-                <button onClick={()  => setCount((count)  => count + 1)}>
-                    count is {count}
-                </button>
-
+            <Title />
                 <Button text="Carica Joke" callback={loadTextCallback}></Button>
                 <Button text="Copia Joke" variant ={ joke === "" ? "disabled" : undefined } callback={copyTextCallback}></Button>
-                <Button variant={ joke === "" ? "hover" : undefined } callback={loadtextCallBack}></Button>
-
-
-
-            </div>
+                <Button variant={ joke === "" ? "hover" : undefined } callback={loadTextCallback}></Button>
         </div>
     )
 }
