@@ -5,8 +5,7 @@ function Title(props) {
 
   return (
     <div className="Title">
-      <h1>Chuck Norris API JOke Generator</h1>
-      <p>Chuck</p>
+      <h1>Chuck Norris API Joke Generator</h1>
     </div>
   )
 }
